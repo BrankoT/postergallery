@@ -3,7 +3,6 @@ import Vuex from 'vuex'
 
 import image from './image'
 import album from './album'
-import poster from './poster'
 
 Vue.use(Vuex)
 
@@ -20,8 +19,7 @@ export default function (/* { ssrContext } */) {
   const Store = new Vuex.Store({
     modules: {
       image,
-      album,
-      poster
+      album
     },
 
     // enable strict mode (adds overhead!)
